@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="https://tse2.mm.bing.net/th?id=OIP.8fo735OWNiLglD-lU1se5QAAAA&pid=Api&P=0&w=300&h=300">
+    <title>Numbers System</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="choosing grid md|grid-max-cols-5">
+            <div class="md|col-2">
+                <select name="from" id="from">
+                    <option value="decimal" selected>Decimal</option>
+                    <option value="binary">Binary</option>
+                    <option value="octal">Octal</option>
+                    <option value="hexadecimal">Hexadecimal</option>
+                </select>
+            </div>
+
+            <div class="md|col-1 switching">&#8652;</div>
+
+            <div class="md|col-2">
+                <select name="to" id="to">
+                    <option value="decimal">Decimal</option>
+                    <option value="binary" selected>Binary</option>
+                    <option value="octal">Octal</option>
+                    <option value="hexadecimal">Hexadecimal</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="input">
+            <form class=" grid md|grid-max-cols-5 md|gaps-y-6 gaps-x-1">
+                <input class="md|col-4" type="text" placeholder="Type a decimal number">
+                <button class="resultBtn md|col-1">Output</button>
+            </form>
+        </div>
+
+        <div class="result grid md|grid-max-cols-2 gaps-x-2 md|gaps-y-2">
+            <div class="reseultInput">
+                <span>Input</span>
+                <span class="re"></span>
+            </div>
+            <div class="reseultOutput">
+                <span>Output</span>
+                <span class="re"></span>
+            </div>
+        </div>
+    </div>
+    <script src="./custom.js"></script>
+</body>
+
+</html>
